@@ -1,5 +1,5 @@
 const app = require("express")();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const request = require("request");
 const cheerio = require("cheerio");
 const cron = require("node-cron");
