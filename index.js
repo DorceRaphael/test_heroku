@@ -3,9 +3,6 @@ const PORT = 3000;
 const request = require("request");
 const cheerio = require("cheerio");
 const cron = require("node-cron");
-// var fs = require("fs");
-
-var jsonDiv = document.querySelector(".json-div");
 
 // TEST CRON
 // cron.schedule("*/5 * * * * *", () => {
@@ -46,9 +43,6 @@ app.get("/test", (req, res) =>
       });
 
       res.json(article);
-      jsonDiv.innerHTML = res.json(article);
-      // var joe = res.json(article);
-      // fs.writeFile("myjsonfile.json", joe, "utf8", callback);
     }
   )
 );
