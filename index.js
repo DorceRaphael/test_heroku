@@ -174,7 +174,7 @@ promises.push(
 // });
 
 /*------------------------------------------- REPONSE */
-app.get("/goalball_api", (req, res) => {
+app.get("/", (req, res) => {
   Promise.all(promises)
     .then((results) => {
       res.json(results);
@@ -185,7 +185,7 @@ app.get("/goalball_api", (req, res) => {
 });
 
 /*------------------------------------------- Test parametre dans l'url */
-// app.get("/goalball_api/:postId", (req, res) => {
+// app.get("/:postId", (req, res) => {
 //   Promise.all(promises).then(function (results) {
 //     res.json(results)[0].filter((element) => element.date == "21 Mai 2021");
 //   });
