@@ -1,8 +1,11 @@
 const app = require("express")();
+const cors = require("cors");
 const PORT = process.env.PORT || 3000;
 const request = require("request");
 const cheerio = require("cheerio");
 const cron = require("node-cron");
+
+app.use(cors());
 
 let promises = [];
 
